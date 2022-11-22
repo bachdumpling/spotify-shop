@@ -85,7 +85,6 @@ function Sidebar() {
         {/* Playlist */}
         {playlists.map((playlist) => {
           return (
-            <div className="">
               <p
                 key={playlist.id}
                 className="cursor-pointer hover:text-white font-extralight"
@@ -94,7 +93,6 @@ function Sidebar() {
                 {" "}
                 {playlist.name}
               </p>
-            </div>
           );
         })}
       </div>
