@@ -70,7 +70,7 @@ function Player() {
   }, [volume]);
 
   return (
-    <div className="h-24 bg-[#1A1A1A] text-white grid grid-cols-3 text-xs md:text-base px-2 md:px-8 border-t-2 border-[#1A1A1A]">
+    <div className="h-20 bg-[#1A1A1A] text-white grid grid-cols-3 text-xs md:text-base px-2 md:px-8 border-t-2 border-[#1A1A1A]">
       {/* Left */}
       <div className="flex items-center space-x-4">
         <img
