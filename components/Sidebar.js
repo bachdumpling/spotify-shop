@@ -47,12 +47,12 @@ function Sidebar() {
             <SearchIcon className="w-7" />
             <p>Search</p>
           </button>
-          <a href="https://www.figma.com/proto/qxCMtdK7IJOReyugbRKeGT/Spotify?page-id=110%3A110&node-id=239%3A438&viewport=-30%2C363%2C0.06&scaling=scale-down&starting-point-node-id=169%3A2448">
-            <button className="btn-sidebar">
+          <button className="btn-sidebar">
+            <a href="https://www.figma.com/proto/qxCMtdK7IJOReyugbRKeGT/Spotify?page-id=110%3A110&node-id=239%3A438&viewport=-30%2C363%2C0.06&scaling=scale-down&starting-point-node-id=169%3A2448">
               <ShoppingBagIcon Icon className="w-7" />
+            </a>
               <p>Shop</p>
-            </button>
-          </a>
+          </button>
         </div>
 
         {/* <button className="btn-sidebar">
