@@ -2,7 +2,6 @@ import { ChevronDownIcon } from "@heroicons/react/outline";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import useSpotify from "../hooks/useSpotify";
-import Homepage from "./homepage";
 import PlaylistScreen from "./PlaylistScreen";
 
 function Center() {

@@ -18,7 +18,7 @@ function Sidebar() {
   const spotifyApi = useSpotify();
   const [playlists, setPlaylists] = useState([]);
   const [playlistId, setPlaylistsId] = useRecoilState(playlistIdState);
-  
+
   useEffect(() => {
     if (spotifyApi.getAccessToken()) {
       spotifyApi.getUserPlaylists().then((data) => {
@@ -47,10 +47,12 @@ function Sidebar() {
             <SearchIcon className="w-7" />
             <p>Search</p>
           </button>
-          <button className="btn-sidebar">
-            <ShoppingBagIcon Icon className="w-7" />
-            <p>Shop</p>
-          </button>
+          <a href="https://www.figma.com/proto/qxCMtdK7IJOReyugbRKeGT/Spotify?page-id=110%3A110&node-id=239%3A438&viewport=-30%2C363%2C0.06&scaling=scale-down&starting-point-node-id=169%3A2448">
+            <button className="btn-sidebar">
+              <ShoppingBagIcon Icon className="w-7" />
+              <p>Shop</p>
+            </button>
+          </a>
         </div>
 
         {/* <button className="btn-sidebar">
@@ -86,13 +88,13 @@ function Sidebar() {
         {playlists.map((playlist) => {
           return (
             <p
-            key={playlist.id}
-            className="cursor-pointer hover:text-white text-sm font-extralight"
-            onClick={(e) => setPlaylistsId(playlist.id)}
+              key={playlist.id}
+              className="cursor-pointer hover:text-white text-sm font-extralight"
+              onClick={(e) => setPlaylistsId(playlist.id)}
             >
-                {" "}
-                {playlist.name}
-              </p>
+              {" "}
+              {playlist.name}
+            </p>
           );
         })}
         {/* </div> */}
